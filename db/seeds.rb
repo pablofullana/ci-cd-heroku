@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Setting.crate(
+Setting.create(
   name: 'version',
   value: '0.0.1',
   description: 'Seeded setting'
