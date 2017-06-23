@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts 'Seeding settings...'
+Setting.find_or_create_by(
+  name: 'version',
+  value: '0.0.1',
+  description: 'Seeded setting'
+)
+puts 'Done.'
