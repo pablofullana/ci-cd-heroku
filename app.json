@@ -1,6 +1,7 @@
 {
   "name": "ci-cd-heroku",
   "scripts": {
+    "postdeploy": "rails db:schema:load db:seed",
   },
   "env": {
   },
