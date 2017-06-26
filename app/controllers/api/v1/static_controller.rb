@@ -8,6 +8,10 @@ module Api
       def server_setup
         render json: { rails: '5.1.1' }, status: :ok
       end
+
+      def stats
+        render json: { foo: 'bar' }, status: :ok
+      end
     end
   end
 end
